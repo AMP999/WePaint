@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/CommonStyle.css" type="text/css">
+    <title>Welcome To MyPaint</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="settings">
+        <div id="div1">
+            <button id="new"></button>
+            <a id="downlodLink" download><button id="save"></button></a>
+            <button id="open"></button>
+            <div id="div2">
+                <input id="openForm1" name="open" type="radio" checked>
+                <input id="imageAdress" type="file">
+            </div>
+            <br>
+            <div id="div3">
+                <input id="openForm2" name="open" type="radio">
+                <input id="imageURL" type="text" placeholder="Image URL">
+            </div>
+        </div>
+
+        <div id="colorBox">
+            <img class="color" id="color-1">
+            <img class="color" id="color-2">
+            <img class="color" id="color-3">
+            <img class="color" id="color-4">
+            <input class="colorChoose" id="color-5" type="color">
+            <img class="color" id="color-6">
+            <img class="color" id="color-7">
+            <img class="color" id="color-8">
+            <img class="color" id="color-9">
+            <img class="color" id="color-10">
+            <img class="color" id="color-11">
+        </div>
+
+    <div id="toolSizeBox">
+            <select id="toolSize">
+                <option value="5">5</option>
+                <option value="9">9</option>
+                <option value="10" selected>10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="14">14</option>
+                <option value="16">16</option>
+                <option value="18">18</option>
+                <option value="20">20</option>
+                <option value="22">22</option>
+                <option value="24">24</option>
+                <option value="26">26</option>
+                <option value="28">28</option>
+                <option value="30">30</option>
+                <option value="35">35</option>
+                <option value="40">40</option>
+            </select>
+        <label><span><strong>:</strong></span></label>
+        <label><span><strong>اندازه ابزار </strong></span></label>
+        </div>
+    </div>
+
+    <div class="toolBox">
+        <button class="tools" id="pen"></button>
+        <button class="tools" id="line"></button>
+        <button class="tools" id="ellipse"></button>
+        <button class="tools" id="circle"></button>
+        <button class="tools" id="rectangle"></button>
+        <button class="tools" id="square"></button>
+        <button class="tools" id="triangle"></button>
+        <button class="tools" id="spray"></button>
+        <button class="tools" id="eraser"></button>
+        <button class="tools" id="text"></button>
+
+    </div>
+
+    <div id="canvasHolder">
+        <canvas id="canvas">
+
+        </canvas>
+    </div>
+</div>
+
+<script src="script/Script.js"></script>
+
+</body>
+</html>
